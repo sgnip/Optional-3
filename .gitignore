@@ -134,6 +134,7 @@ tikzgen/*
 *.swp
 
 *~
+*.sublime-workspace
 *.sublime-project
 *.zip
 
