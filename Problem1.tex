@@ -1,7 +1,7 @@
 % -*- root: /SEPRO2451_Opt-assig-3_IMP_GJM_VDJS.tex -*-
 \section{Problem 1}
 
-\textbf{The insurance company “El Castañazo” is planning to develop a new software for their insurance policies management for which it has been estimated a size of 184 function points.
+\textbf{The insurance company “El Casta\~nazo” is planning to develop a new software for their insurance policies management for which it has been estimated a size of 184 function points.
 The programming environment to be used is Visual Age 2.0. Choose the appropriate COCOMO II submodel and determine the effort, duration and human resources needed to develop the project as well as the productivity related to the project, considering the following scaling factors:}
 
 \begin{itemize}
@@ -16,9 +16,9 @@ management and configuration management.
 \end{itemize}
 
 
-\seprule 
+\seprule
 
-First of all, we have to decide which COCOMO II submodel we are going to apply taking into account the information we have and the needs of the client, the insurance company 'El Castan\'azo'. 
+First of all, we have to decide which COCOMO II submodel we are going to apply taking into account the information we have and the needs of the client, the insurance company 'El Casta\~nazo'.
 
 The submodel applied to the requested new software is going to be \emph{Anticipated Development}, as we haven't started its development yet and we are starting from scratch (not using preexisting components), but we are given its size estimation in Unadjusted Function Points: 184 FP.
 
@@ -32,11 +32,12 @@ Next thing to do is giving values to the Scale Factors:
 \item \textbf{Process maturity:} The organization is placed in level 1 of its capacity maturity, taking into account that it fulfils the key processes areas (KPAs) of requirements management and configuration management. We will suppose that the maturity is Level 1 (upper half) out of 5, which results in a low maturity.\textbf{Value: 4}.
 \end{itemize}
 
-Introducing this values in \textit{USC-COCOMO II} gives us a scale factor of \textbf{23.65} (3.72+5.07+4.24+4.38+6.24). Then we introduce its 184 Unadjusted Function Points indicated in the statement. VisualAge 2.0 is a software development environment for multiple languages, and after some research on the Internet, it seems version 2.0 is quite related to JAVA. As we don't really know the language in which the software will be coded and JAVA is an Object-Oriented programming language, we have chosen Object-Oriented Default Language and set the corresponding option for our project.
+Introducing this values in \textit{USC-COCOMO II} gives us a scale factor of \textbf{23.65} ($3.72+5.07+4.24+4.38+6.24$). Then we introduce its 184 Unadjusted Function Points indicated in the statement. VisualAge 2.0 is a software development environment for multiple languages, and after some research on the Internet, it seems version 2.0 is quite related to JAVA. As we don't really know the language in which the software will be coded and JAVA is an Object-Oriented programming language, we have chosen Object-Oriented Default Language and set the corresponding option for our project.
 
-With this information, the estimations obtained are the ones shown in Table \ref{tbl_Problem1}:
+With this information, the estimations obtained are the ones shown in Table \ref{tbl_Problem1}, and we summarize all the overall estimations of the project in Table \ref{tbl_Problem1_ALL}.
 
 \begin{table}
+\centering
 \begin{tabular}{c|c|c|c|c|c|c}
 \textbf{Estimated} & \textbf{Effort (person-month)} & \textbf{Sched (months)} & \textbf{PROD} & \textbf{COST} & \textbf{INST} & \textbf{Staff} \\ \hline
 \textbf{Optimistic} & 13.4 & 8.6 & 397.2 & 0.00 & 0.0 & 1.6 \\
@@ -47,9 +48,9 @@ With this information, the estimations obtained are the ones shown in Table \ref
 \caption{COCOMO II estimations.}
 \end{table}
 
-We summarize all the overall estimations of the project in Table \ref{tbl_Problem1_ALL}.
 
 \begin{table}
+\centering
 \begin{tabular}{|c|c|} \hline
 \textbf{Project Name} & \emph{Castaniazo} \\ \hline
 \textbf{Total Lines of Code (SLOC)} & \emph{5336} \\ \hline
@@ -57,12 +58,12 @@ We summarize all the overall estimations of the project in Table \ref{tbl_Proble
 \textbf{Total Effort} & \emph{20.049 Person-Month} \\ \hline
 \textbf{Estimated Duration} & \emph{9.8 Months} \\ \hline
 \textbf{Productivity} & \emph{266.1 SLOC/PM} \\ \hline
-\textbf{Human Resources} & \emph{2.0 persons \textbf{*}} \\ \hline
+\textbf{Human Resources} & \emph{2.0 persons\footnotemark} \\ \hline
 \end{tabular}
 \label{tbl_Problem1_ALL}
 \caption{Overall COCOMO II project estimations.}
 \end{table}
 
-\textit{\textbf{*}: ~2 persons in Optimistic and Most Likely Estimations; ~3 persons in the Pessimistic Estimation.}
+\footnotetext{$\sim$2 persons in Optimistic and Most Likely Estimations, $\sim$3 persons in the Pessimistic Estimation.}
 
 We don't have more information about Effort Multipliers nor personnel salaries, so we can't get more estimations for our project.
