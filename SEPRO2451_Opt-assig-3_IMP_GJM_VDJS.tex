@@ -40,19 +40,61 @@ The company ``Compan\'ia de Comunicaciones Terabit'' is planning to build a comm
 
 We have chosen the \textbf{Post-Architecture} submodel: the framework for the development has been established, a size estimation has been performed based on function points, and the tools and personnel are ready.
 
-% TODO: Fill this table
+We used \textit{USC-COCOMO} because \textit{CO-STAR} didn't allow us to estimate projects bigger than 5 KLOC. 
+
+Introducing this values in \textit{USC-COCOMO II} gives us a scale factor of \textbf{23.65} (3.72+5.07+4.24+4.38+6.24). Then we introduce its 200 Unadjusted Function Points indicated in the statement and its equivalence with lines of code given by the statement (53 LoC/fp).
+
+This are the values given to multipliers:
 
 \begin{table}[hbtp]
 \centering
-\begin{tabular}{l|l}
-Effort & X person-months \\ \hline
-Duration & X months \\ \hline
-Human resources & ? \\ \hline
-Productivity & ? \\ \hline
-Development cost & Y \euro
+\begin{tabular}{l|l|l}
+Multiplier & Value & Justification \\ \hline
+DATA & high & The P/D coefficient is computed as $\frac{DB size}{SLoC} = \frac{9*(2^{20}}{10600} = 890$\\ \hline
+CPLX & high & We think that \textit{distributed processing supported by middleware} needs data restructuring and simple triggers (according to our knowledge acquired in other courses from college). \\ \hline
+TIME & high & $\approx$ 70\%.  \\ \hline
+STOR & nominal & $\leq$ 50 \%. \\ \hline
+ACAP & high & Given in statement. \\ \hline
+APEX & high & 3 years of experience. \\ \hline
+LTEX & high & 3 years of experience. \\ \hline
+TOOL & low & CASE tool. \\ \hline
+SCED & nominal & Because no stretch-out nor compression are needed. \\ \hline
 \end{tabular}
-\caption{COCOMO estimations.}
-\label{tblProblem1}
+\caption{COCOMO multipliers.}
+\label{tblMultipliersProblem2}
+\end{table}
+
+RUSE,DOCU, PCON, PVOL, PLEX, SITE multipliers are not mentioned in statement, so they have been given nominal value.
+
+
+
+Using this multipliers, we obtain this estimation USC-COCOMO-II:
+
+\begin{table}
+\begin{tabular}{c|c|c|c|c|c|c}
+\textbf{Estimated} & \textbf{Effort (person-month)} & \textbf{Sched (months)} & \textbf{PROD} & \textbf{COST} & \textbf{INST} & \textbf{Staff} \\ \hline
+\textbf{Optimistic} & 34.1 & 11.6 & 311.4 & 27246.22 & 2.6 & 2.9 \\
+\textbf{Most Likely} & 42.6& 12.5 & 249 & 34057.78 & 3.2 & 3.4 \\
+\textbf{Pessimistic} & 53.2 & 13.5 &199.2 & 42572.23 & 4.0 & 3.9\\ \hline
+\end{tabular}
+\label{tbl_Problem2}
+\caption{COCOMO II estimations.}
+\end{table}
+
+We summarize all the overall estimations of the project in Table \ref{tbl_Problem1_ALL}, using Most Likely estimation.
+
+\begin{table}
+\begin{tabular}{|c|c|} \hline
+\textbf{Project Name} & \emph{Communication for Terabit} \\ \hline
+\textbf{Total Lines of Code (SLOC)} & \emph{10600} \\ \hline
+\textbf{Hours/PM} & \emph{152.00 h/PM} \\ \hline
+\textbf{Total Effort} & \emph{42.6 Person-Month} \\ \hline
+\textbf{Estimated Duration} & \emph{12.5 Months} \\ \hline
+\textbf{Productivity} & \emph{249 SLOC/PM} \\ \hline
+\textbf{Human Resources} & We need more information to know this \\ \hline
+\end{tabular}
+\label{tbl_Problem1_ALL}
+\caption{Overall COCOMO II project estimations.}
 \end{table}
 
 \newpage
