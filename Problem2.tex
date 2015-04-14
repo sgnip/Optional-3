@@ -7,7 +7,7 @@ The company ``Compan\'ia de Comunicaciones Terabit'' is planning to build a comm
 
 We have chosen the \textbf{Post-Architecture} submodel: the framework for the development has been established, a size estimation has been performed based on function points, and the tools and personnel are ready.
 
-We used \textit{USC-COCOMO} because \textit{CO-STAR} didn't allow us to estimate projects bigger than 5 KLOC. 
+We used \textit{USC-COCOMO} because \textit{CO-STAR} didn't allow us to estimate projects bigger than 5 KLOC.
 
 Introducing this values in \textit{USC-COCOMO II} gives us a scale factor of \textbf{23.65} (3.72+5.07+4.24+4.38+6.24). Then we introduce its 200 Unadjusted Function Points indicated in the statement and its equivalence with lines of code given by the statement (53 LoC/fp).
 
@@ -15,10 +15,10 @@ This are the values given to multipliers:
 
 \begin{table}[hbtp]
 \centering
-\begin{tabular}{|c|c|l|}
+\begin{tabular}{|c|c|p{10cm}|}
 \hline
 \textbf{Multiplier} & \textbf{Value} & \textbf{Justification} \\ \hline
-\textbf{DATA} & high & The P/D coefficient is computed as $\frac{DB size}{SLoC} = \frac{9*(2^{20}}{10600} = 890$\\ \hline
+\textbf{DATA} & high & The P/D coefficient is computed as $\frac{DB size}{SLoC} = \frac{9 · 2^{20}}{10600} = 890$ \vspace{3pt} \\ \hline
 \textbf{CPLX} & high & We think that \textit{distributed processing supported by middleware} needs data restructuring\\ & & and simple triggers (according to our knowledge acquired in other courses from college). \\ \hline
 \textbf{TIME} & high & $\approx$ 70\%.  \\ \hline
 \textbf{STOR} & nominal & $\leq$ 50 \%. \\ \hline
@@ -38,6 +38,7 @@ RUSE, DOCU, PCON, PVOL, PLEX, SITE multipliers are not mentioned in statement, s
 Using this multipliers, we obtain this estimation USC-COCOMO-II:
 
 \begin{table}[hbtp]
+\centering
 \begin{tabular}{|c||c|c|c|c|c|c|}
 \hline
 \textbf{Estimated} & \textbf{Effort (person-month)} & \textbf{Sched (months)} & \textbf{PROD} & \textbf{COST} & \textbf{INST} & \textbf{Staff} \\ \hline
@@ -52,6 +53,7 @@ Using this multipliers, we obtain this estimation USC-COCOMO-II:
 We summarize all the overall estimations of the project in Table \ref{tbl_Problem1_ALL}, using Most Likely estimation.
 
 \begin{table}[hbtp]
+\centering
 \begin{tabular}{|c|c|} \hline
 \textbf{Project Name} & {Communication for Terabit} \\ \hline
 \textbf{Total Lines of Code (SLOC)} & {10600} \\ \hline
